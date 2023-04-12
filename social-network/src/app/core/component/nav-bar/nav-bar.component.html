@@ -1,0 +1,44 @@
+<nav class="nav-bar-container d-flex align-items-center justify-content-between">
+    <div class="container-logo">
+        <img src="./assets/logo/logo.png" alt="logo">
+    </div>
+    <div class="user-actions d-flex align-items-center">
+        <!-----Search----->
+        <div class="container-search d-flex align-items-center">
+            <mat-icon class="material-symbols-outlined">
+                search
+            </mat-icon>
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search"
+                aria-describedby="basic-addon1">
+        </div>
+        <!-- <div class="input-group">
+            <div class="input-group-prepend">
+                <mat-icon class="material-symbols-outlined">
+                    search
+                </mat-icon>
+            </div>
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search"
+                aria-describedby="basic-addon1">
+        </div> -->
+        <!-----End Search----->
+        <div class="d-flex align-items-center">
+            <div class="container-notification">
+                <div class="red"></div>
+                <mat-icon class="material-symbols-outlined">
+                    notifications
+                </mat-icon>
+            </div>
+            <div class="user-icon">
+                <img src="./assets/img/user-image.jpg" mat-icon-button alt="user image" [matMenuTriggerFor]="menu">
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item>
+                        <mat-icon class="material-symbols-outlined">
+                            logout
+                        </mat-icon>
+                        Log out
+                    </button>
+                </mat-menu>
+            </div>
+        </div>
+    </div>
+</nav>

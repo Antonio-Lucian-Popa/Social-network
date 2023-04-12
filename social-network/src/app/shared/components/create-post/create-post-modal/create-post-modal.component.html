@@ -1,0 +1,38 @@
+<div class="container-add-post">
+  <div class="mat-dialog-header d-flex align-items-center">
+    <h2 class="title-modal col-10">Create Post</h2>
+    <mat-icon class="material-symbols-outlined col" (click)="closeDialog()">
+      close
+    </mat-icon>
+  </div>
+  <mat-divider></mat-divider>
+  <mat-dialog-content>
+    <div class="user-info d-flex align-items-center">
+      <div class="container-image">
+        <img src="./assets/img/user-image.jpg" alt="user image">
+      </div>
+      <div class="info d-flex flex-column justify-content-start">
+        <span class="username">Alexandra Bae</span>
+      </div>
+    </div>
+    <div class="user-input">
+      <mat-form-field [style.fontSize]="'16px'" appearance="fill">
+        <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1"
+          cdkAutosizeMaxRows="5" tabindex="-1" [autofocus]="false" placeholder="What's new, Alexandra?"></textarea>
+      </mat-form-field>
+    </div>
+  </mat-dialog-content>
+  <div mat-dialog-actions class="dialog-action-container d-flex align-items-center justify-content-between">
+    <div class="container-inputs d-flex align-items-center">
+      <mat-icon class="material-symbols-outlined add-image-icon" (click)="fileInput.click()">
+        image
+      </mat-icon>
+      <input #fileInput type="file" (change)="onFileInput($event)" style="display:none;"
+        accept="image/png, image/gif, image/jpeg image/jpeg" />
+
+    </div>
+    <mat-icon class="material-symbols-outlined send-icon" (click)="createPost()">
+      send
+    </mat-icon>
+  </div>
+</div>

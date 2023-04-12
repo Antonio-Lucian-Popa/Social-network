@@ -1,0 +1,49 @@
+.container-sidenav {
+    width: 250px;
+    padding-top: 50px;
+    .user-info {
+        box-shadow: 2px 2px 15px 5px rgba(0,0,0,0.05);
+        .container-image {
+            width: 50px;
+            margin-right: 10px;
+            img {
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+        .info {
+            .username {
+                color: #292929;
+            }
+
+            .alias {
+                color: #BBBBBB;
+            }
+        }
+    }
+
+    .navigation {
+        box-shadow: 2px 2px 15px 5px rgba(0,0,0,0.05);
+        margin-top: 50px;
+
+        .container-options {
+            width: 100%;
+            padding-left: 0!important;
+            li {
+                list-style: none;
+                height: 40px;
+                margin-bottom: 10px;
+                cursor: pointer;
+                mat-icon {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+.active {
+    color: #3E8BFC;
+    background-color: #FBFBFB;
+}

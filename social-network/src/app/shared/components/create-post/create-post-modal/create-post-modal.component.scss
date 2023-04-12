@@ -1,0 +1,55 @@
+.container-add-post {
+  .mat-dialog-header {
+    .title-modal {
+      margin: 0 !important;
+    }
+
+    mat-icon {
+      text-align: end;
+      cursor: pointer;
+    }
+  }
+
+  mat-divider {
+    margin: 10px 0;
+  }
+
+  .user-info {
+    margin: 10px 0px;
+
+    .container-image {
+      width: 40px;
+      margin-right: 10px;
+
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    .info {
+      .username {
+        color: #292929;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .dialog-action-container {
+
+    .container-inputs {
+      .add-image-icon {
+        color: #F7B928;
+        font-size: 25px;
+      }
+    }
+
+    mat-icon {
+      cursor: pointer;
+    }
+
+    .send-icon {
+      color: #3E8BFC;
+    }
+  }
+}

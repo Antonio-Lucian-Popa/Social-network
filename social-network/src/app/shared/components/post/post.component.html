@@ -1,0 +1,55 @@
+<mat-card class="post">
+  <mat-card-content class="d-flex flex-column">
+    <div class="user-info d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
+        <div class="container-image">
+          <img src="./assets/img/boy-image.jpg" alt="user image">
+        </div>
+        <div class="info d-flex flex-column justify-content-start">
+          <span class="username">Iuly Kyle</span>
+          <p>12 hours ago</p>
+        </div>
+      </div>
+      <mat-icon class="material-symbols-outlined option-post" mat-icon-button [matMenuTriggerFor]="menu">
+        more_vert
+      </mat-icon>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon class="material-symbols-outlined">
+            report
+          </mat-icon>
+          Report
+        </button>
+        <button mat-menu-item *ngIf="false"> <!-----TODO: Make a condition if the post is mine we have the delete without report-->
+          <mat-icon class="material-symbols-outlined">
+            delete
+          </mat-icon>
+          Delete
+        </button>
+      </mat-menu>
+    </div>
+    <div class="post-description">
+      <p>This was one of the most epic journeys</p>
+    </div>
+    <div class="post-images">
+      <div class="post-image" [ngClass]="true ? 'single-image' : ''"
+        style="background-image: url(../../../../assets/img/post-image1.jpg)">
+      </div>
+    </div>
+
+    <div class="actions d-flex align-items-center">
+      <div class="views d-flex align-items-center">
+        <mat-icon class="material-symbols-outlined">
+          visibility
+        </mat-icon>
+        <p>1k</p>
+      </div>
+      <div class="react d-flex align-items-center">
+        <mat-icon class="material-symbols-outlined">
+          favorite
+        </mat-icon>
+        <p>300</p>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

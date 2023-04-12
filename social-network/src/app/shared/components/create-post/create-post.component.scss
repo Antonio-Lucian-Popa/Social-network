@@ -1,0 +1,26 @@
+.container-add-post {
+  width: 400px;
+  box-shadow: 2px 2px 15px 5px rgba(0,0,0,0.05);
+  margin-top: 50px;
+
+  .container-image {
+    width: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  .description {
+    color: #888888;
+    cursor: pointer;
+  }
+
+  .send-icon {
+    color: #3E8BFC;
+    cursor: pointer;
+  }
+}
